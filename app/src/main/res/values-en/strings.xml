@@ -1,0 +1,372 @@
+<resources>
+    <!-- App and Navigation -->
+    <string name="app_name">ELogAI</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_logs">Logs</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_more">More</string>
+
+    <!-- Duty Status -->
+    <string name="on_duty">ON DUTY</string>
+    <string name="off_duty">OFF DUTY</string>
+    <string name="ym">YM</string>
+    <string name="pc">PC</string>
+    <string name="sb">SB</string>
+    <string name="on">ON</string>
+
+    <string name="personal_conveyance">Personal Conveyance</string>
+    <string name="drive">Drive</string>
+    <string name="shift">Shift</string>
+    <string name="yard_move">Yard Move</string>
+    <string name="off">OFF</string>
+    <string name="sleep">SLEEP</string>
+    <string name="driving">DRIVING</string>
+    <string name="last">LAST</string>
+    <string name="change_duty_status">Change Duty Status</string>
+    <string name="cycle">Cycle</string>
+    <string name="stationary">Stationary</string>
+
+    <!-- Languages -->
+    <string name="english">English</string>
+    <string name="russian">Russian</string>
+    <string name="turkmen">Turkmen</string>
+
+    <!-- Settings and User Info -->
+    <string name="licence">Licence:</string>
+    <string name="user_number">User number:</string>
+    <string name="issued_state">Issued State:</string>
+    <string name="switch_driver">Switch Driver</string>
+    <string name="permissions">Permissions</string>
+    <string name="feedback">Feedback</string>
+    <string name="keep_screen">Keep screen</string>
+    <string name="reload_logs">Reload Logs</string>
+    <string name="language">Language</string>
+    <string name="check_update">Check Update</string>
+    <string name="leave_truck">Leave truck</string>
+    <string name="device_volume">Device volume</string>
+    <string name="appearance">Appearance</string>
+    <string name="inspections">Inspections</string>
+
+    <!-- DVIR (Driver Vehicle Inspection Report) -->
+    <string name="create_dvir">Create DVIR</string>
+    <string name="vehicles">Vehicles</string>
+    <string name="trailers">Trailers</string>
+    <string name="location">Location</string>
+    <string name="time">Time:</string>
+    <string name="odometer">Odometer</string>
+    <string name="defects">Defects</string>
+    <string name="unit_defects">Unit Defects:</string>
+    <string name="trailer_defects">Trailer Defects:</string>
+    <string name="add_defects">Add defects</string>
+    <string name="defects_list">Defects list</string>
+    <string name="please_sign_the_following_uncertified_records">Please sign the following uncertified records</string>
+    <string name="delete_the_report">Delete the report</string>
+    <string name="click_the_button_below_to_create_dvir">Click the button below to create DVIR.</string>
+
+    <!-- Login and Authentication -->
+    <string name="elog_ai">Elog AI</string>
+    <string name="username">Username</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="login">Login</string>
+    <string name="otp_verification">OTP verification</string>
+    <string name="enter_the_code_from_the_mail_sent_to">Enter the code from the mail sent to</string>
+    <string name="code">Code</string>
+    <string name="enter_6_digit_code">Enter 6 digit code</string>
+    <string name="don_t_receive_the_otp">Don\'t receive the OTP?</string>
+    <string name="verify">Verify</string>
+    <string name="error_while_login">Error while login</string>
+    <string name="wrong_username_or_password">Wrong username or password !</string>
+    <string name="you_are_already_in_into_elog_ai_on_another_device">You are already in into Elog AI on another device</string>
+    <string name="please_log_out_to_prevent_potential_data_loss">Please log out to prevent potential data loss</string>
+    <string name="continue_anyway">Continue anyway</string>
+    <string name="return_to_login">Return to login</string>
+
+    <!-- Signature -->
+    <string name="signature">Signature</string>
+    <string name="driver_signature">Driver Signature</string>
+    <string name="use_my_existent_signature">Use my existent signature</string>
+    <string name="clear_signature">Clear signature</string>
+    <string name="clear">Clear</string>
+    <string name="mechanic_signature">Mechanic Signature</string>
+    <string name="remove_existant_signature">Remove existent signature</string>
+    <string name="approve_signature">Approve signature</string>
+    <string name="sign_here">Sign here</string>
+    <string name="would_you_like_to_save_your_signature">Would you like to save your signature?</string>
+    <string name="if_you_save_your_signature_you_can_use_it_multiple_times_in_the_future">If you save your signature, you can use it multiple times in the future</string>
+    <string name="above_defects_need_to_be_corrected">Above defects need to be corrected</string>
+    <string name="above_defects_corrected">Above defects corrected</string>
+
+    <!-- Inspections -->
+    <string name="send_logs">Send Logs</string>
+    <string name="output_file_commit">Output file commit</string>
+    <string name="send">Send</string>
+    <string name="send_eld_output_file_to_dot">Send ELD Output file to DOT</string>
+    <string name="mail_logs">Mail Logs</string>
+    <string name="send_eld_file_to_dot">Send ELD FILE To DOT</string>
+    <string name="web_server">Web server</string>
+    <string name="email">Email</string>
+    <string name="e_mail">E-mail</string>
+    <string name="enter_receipt_e_mail">Enter receipt e-mail</string>
+    <string name="the_text_will_change">The text will change</string>
+    <string name="your_logs_sent_to_the_administration_thank_you_for_your_time">Your logs sent to the administration. Thank you for your time!</string>
+
+    <!-- Certify Logs -->
+    <string name="certify_logs">Certify logs</string>
+    <string name="certify">Certify</string>
+    <string name="back_to_logs">Back to logs</string>
+    <string name="your_logs_certified">Your logs certified</string>
+    <string name="i_hereby_certify_that_my_date_entries_and_my_record_of_duty_status_for_this_24_hour_period_are_true_and_correct">I hereby certify that my date entries and my record of duty status for this 24-hour period are true and correct</string>
+
+    <!-- Log Details -->
+    <string name="log_details">Log Details</string>
+    <string name="status">Status</string>
+    <string name="documents">Documents:</string>
+    <string name="notes">Notes:</string>
+    <string name="duration">Duration:</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="annotate">Annotate</string>
+    <string name="note">Note</string>
+    <string name="quick_note">Quick Note</string>
+    <string name="documents_">Documents</string>
+    <string name="are_you_sure_you_want_to_edit_this_log">Are you sure you want to edit this log!</string>
+    <string name="yes_save_changes">Yes, save changes</string>
+    <string name="sign">Sign</string>
+    <string name="submit">Submit</string>
+
+    <!-- Error Messages -->
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="check_internet_connection">Check internet connection</string>
+
+    <!-- Device Connection -->
+    <string name="scanning_">Scanning…</string>
+    <string name="search_for_devices">Search for devices</string>
+    <string name="device_is_not_found">Device is not found</string>
+    <string name="select_eld_device">Select ELD device</string>
+
+    <!-- Location -->
+    <string name="confirm">Confirm</string>
+    <string name="check_your_location">Check your location</string>
+    <string name="your_location_may_be_wrong_would_you_like_to_update_it_it_might_take_minute">Your location may be wrong. Would you like to update it? It might take minute</string>
+    <string name="address">Address:</string>
+    <string name="n_a">N/A</string>
+    <string name="don_t_show_again_update_on">Don\'t show again. (Update on)</string>
+    <string name="update_now">Update now</string>
+    <string name="not_now">Not now</string>
+
+    <!-- Chat -->
+    <string name="alert">Alert</string>
+    <string name="select_from_album">Select from album</string>
+    <string name="camera">Camera</string>
+    <string name="select_from_files">Select from files</string>
+    <string name="write_message">Write message…</string>
+    <string name="slide_to_cancel">Slide to cancel</string>
+
+
+    <!-- App Theme -->
+    <string name="select_mode">Select mode</string>
+    <string name="light_mode">Light mode</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="system">System</string>
+
+    <!-- Feedback -->
+    <string name="rate_us">Rate us</string>
+    <string name="how_would_you_rate_our_app_experience">How would you rate our app experience?</string>
+    <string name="no_thanks">No, Thanks!</string>
+
+    <!-- Connection Status -->
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="refresh">Refresh</string>
+
+    <!-- Permissions -->
+    <string name="bluetooth_permission">Bluetooth Permission</string>
+    <string name="required_permissions">Required Permissions</string>
+    <string name="this_app_collects_location_data_to_enable_tracking_even_when_the_app_is_closed_or_not_in_us">This app collects location data to enable tracking even when the app is closed or not in us.</string>
+    <string name="understand">Understand</string>
+    <string name="all_required_permission_are_not_granted_the_aplication_will_not_be_able_to_as_it_intended_to_be">All required permission are not granted, the application will not be able to as it intended to be.</string>
+    <string name="in_order_to_connect_to_the_eld_device_you_must_first_allow_the_bluetooth_permission_and_turn_it_on">In order to connect to the ELD device, you must first allow the bluetooth permission and turn it on.</string>
+
+
+    <!-- User Manual -->
+    <string name="user_manual">User Manual</string>
+    <string name="step_by_step_guid_for_drivers_during_inspections">Step by step guid for drivers during inspections</string>
+    <string name="installation">Installation</string>
+    <string name="malfunction">Malfunction</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="diagnosis_of_device">Diagnosis of device</string>
+    <string name="eld_coordinates">Eld Coordinates</string>
+    <string name="gps_coordinates">GPS Coordinates</string>
+    <string name="language_change">Language change</string>
+    <string name="the_source_for_both_drivers_and_dispatchers_to_guide_while_using_elog_ai">The source for both drivers and dispatchers to guide while using Elog AI</string>
+    <string name="quick_instruction_to_setup_both_driver_application_and_eld_device_before_using_elog_ai">Quick instruction to setup both driver application and eld device before using Elog AI</string>
+    <string name="the_guide_when_eld_or_driver_application_does_not_work_as_intended">The guide when eld or driver application does not work as intended</string>
+
+    <!-- Account Actions -->
+    <string name="log_out">Log out</string>
+    <string name="go_to_settings">Go to settings</string>
+
+    <!-- Inspection -->
+    <string name="review_logs_for_previous_7_days_today">Review logs for previous 7 days+ today</string>
+    <string name="tap_begin_inspection_and_hand_your_device_to_the_officer">Tap "Begin inspection" and hand your device to the officer</string>
+    <string name="begin_inspection">Begin inspection</string>
+    <string name="send_logs_for_previous_7_days_today">Send logs for previous 7 days+ today</string>
+
+    <!-- ELD Actions -->
+    <string name="reset_eld">Reset ELD</string>
+    <string name="do_you_really_want_to_reset_eld">Do you really want to reset ELD?</string>
+    <string name="yes_i_do">Yes, I do</string>
+    <string name="the_reset_was_completed_succesfully">The reset was completed successfully</string>
+    <string name="connect_eld">Connect ELD</string>
+
+    <!-- Duty Status Update -->
+    <string name="update_duty_status">Update Duty Status</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="engine_hours">Engine hours</string>
+    <string name="successfully_edited">Successfully Edited</string>
+    <string name="working_on_it">Working on it</string>
+    <string name="fixed">Fixed</string>
+
+    <!-- ELD Connection Status -->
+    <string name="eld_connected">ELD connected</string>
+    <string name="eld_not_connected">ELD Not connected</string>
+
+    <!-- Driving Actions -->
+    <string name="continue_driving">Continue driving</string>
+    <string name="logs_were_sent_successfully">Logs were sent successfully</string>
+    <string name="update_main_info">Update main info</string>
+    <string name="trailer">Trailer</string>
+    <string name="do_you_really_want_to_leave_truck">Do you really want to leave truck?</string>
+
+    <!-- Misc Actions -->
+    <string name="change_status">Change Status</string>
+
+    <!-- Location Settings -->
+    <string name="enable_location">Enable Location</string>
+    <string name="your_location_is_turned_off_please_enable_it_to_use_this_feature">Your location is turned off. Please enable it to use this feature.</string>
+    <string name="location_settings">Location Settings</string>
+
+    <!-- Bluetooth Settings -->
+    <string name="enable_bluetooth">Enable bluetooth</string>
+    <string name="your_bluetooth_is_turned_off_please_enable_it_to_use_this_feature">Your Bluetooth is turned off, please enable it to use this feature</string>
+    <string name="bluetooth_settings">Bluetooth settings</string>
+
+    <!-- Driver Information -->
+    <string name="driver_name">Driver Name</string>
+    <string name="main_office_adress">Main office address</string>
+    <string name="main_terminal_adress">Main terminal address</string>
+    <string name="driver">Driver</string>
+    <string name="driver_id">Driver ID</string>
+    <string name="co_drivers_id">Co-Drivers (ID)</string>
+    <string name="dl_number">DL Number</string>
+    <string name="timezone">Timezone</string>
+    <string name="eld_id">ELD ID</string>
+    <string name="timezone_offset">Timezone Offset</string>
+
+    <!-- Common Actions -->
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+    <string name="yes">Yes</string>
+    <string name="done">Done</string>
+    <string name="not_ready">Not ready</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+
+    <!-- Violation Statuses -->
+    <string name="violation_on_break_status">Violation on Break status</string>
+    <string name="_break">Break</string>
+    <string name="violation">Violation</string>
+    <string name="violation_on_drive_status">Violation on Drive status</string>
+    <string name="violation_on_shift">Violation on Shift</string>
+    <string name="everything_is_on_the_way_keep_moving">Everything is on the way. Keep moving!</string>
+    <string name="you_are_close_to_violate_the_drive_rule">You are close to violate the Drive rule</string>
+
+    <!-- Log Report -->
+    <string name="eld_provide">ELD provide</string>
+    <string name="eld_registration_id">ELD registration ID</string>
+    <string name="carrier">Carrier</string>
+    <string name="vehicles_vin">Vehicle (VIN)</string>
+    <string name="usdot">USDOT #</string>
+    <string name="main_office">Main Office</string>
+    <string name="home_terminal">Home Terminal</string>
+    <string name="distance">Distance</string>
+    <string name="shipping_docs">Shipping Docs</string>
+    <string name="malfunction_indicators">Malfunction Indicators</string>
+    <string name="data_diagnostic_indicators">Data Diaognostic Indicators</string>
+    <string name="current_location">Current Location</string>
+    <string name="unidentified_driver_records">Inidetified Driver Records</string>
+    <string name="driver_daily_log">DRIVER DAILY LOG</string>
+    <string name="no">No</string>
+    <string name="time_edt">Time (EDT)</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="eng_hours">Eng. hours</string>
+    <string name="certified">Certified</string>
+    <string name="not_certified">Not Certified</string>
+    <string name="log_reports">Log Reports</string>
+    <string name="daily_log">Daily Log</string>
+
+    <!-- Quick Notes -->
+    <string name="pti">PTI</string>
+    <string name="scale">Scale</string>
+    <string name="dot">DOT</string>
+    <string name="repairs">Repairs</string>
+    <string name="pick_up">Pick up</string>
+    <string name="delivery">Delivery</string>
+    <string name="fuel">Fuel</string>
+    <string name="drop">Drop</string>
+    <string name="hook">Hook</string>
+    <string name="other">Other</string>
+    <string name="rest">Rest</string>
+    <string name="shower">Shower</string>
+    <string name="restroom">Restroom</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="dinner">Dinner</string>
+    <string name="lunch">Lunch</string>
+    <string name="shopping">Shopping</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="home">Home</string>
+    <string name="office">Office</string>
+    <string name="gym">Gym</string>
+    <string name="truck_stop">Truck stop</string>
+    <string name="main_content">Main Content</string>
+    <string name="driver_info">Driver Info</string>
+    <string name="vehicle_id">Vehicle id</string>
+    <string name="unit">Unit</string>
+    <string name="battery">Battery</string>
+    <string name="brake_accessories">Brake Accessories</string>
+    <string name="defroster_heater">Defroster / Heater</string>
+    <string name="brakes_service">Brakes, Service</string>
+    <string name="coupling_devices">Coupling Devices</string>
+    <string name="landing_gear">Landing gear</string>
+    <string name="suspension_system">Suspension System</string>
+    <string name="lights_all">Lights - All</string>
+
+    <!-- Switch Driver -->
+    <string name="do_you_really_want_to_switch_to_co_driver">Do you really want to switch to co-driver?</string>
+    <string name="select_shipping_document">Select shipping document</string>
+
+    <!-- Diagnosis  -->
+    <string name="good">Good</string>
+    <string name="not_working">Not working</string>
+    <string name="fused_coordinates">Fused Coordinates</string>
+    <string name="network_quality">Network Quality</string>
+
+    <!-- Feedback  -->
+    <string name="your_feedback">Your feedback</string>
+    <string name="send_feedback">Send feedback</string>
+    <string name="return_to_truck">Return to truck</string>
+    <string name="version_num">Version 1.0.0</string>
+
+    <!-- Logout  -->
+    <string name="do_you_really_want_to_logout">Do you really want to logout ?</string>
+
+    <string-array name="log_tabs">
+        <item>Logs</item>
+        <item>Main</item>
+        <item>DVIR</item>
+    </string-array>
+
+
+</resources>

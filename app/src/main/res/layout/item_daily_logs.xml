@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:background="@color/text_primary"
+        android:padding="0.5dp">
+
+        <TextView
+            android:id="@+id/tv_log_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/surface"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:textColor="@color/text_primary"
+            android:textSize="4sp"
+            tools:ignore="SmallSp"
+            tools:text="@string/no" />
+
+        <TextView
+            android:id="@+id/tv_log_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0.5dp"
+            android:layout_weight="0.5"
+            android:background="@color/surface"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/status"
+            android:textColor="@color/text_primary"
+            android:textSize="4sp"
+
+
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_log_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/surface"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/time_edt"
+            android:textColor="@color/text_primary"
+            android:textSize="4sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_log_duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/surface"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="Duration"
+            android:textColor="@color/text_primary"
+            android:textSize="4sp"
+
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_log_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0.5dp"
+            android:layout_weight="1.5"
+            android:background="@color/surface"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/location"
+            android:textColor="@color/text_primary"
+            android:textSize="4sp"
+
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_log_vehicle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/surface"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/vehicle"
+            android:textColor="@color/text_primary"
+            android:textSize="4sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_log_odometer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/surface"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/odometer"
+            android:textColor="@color/text_primary"
+            android:textSize="4sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_log_eng_hours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/surface"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/eng_hours"
+            android:textColor="@color/text_primary"
+            android:textSize="4sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_log_notes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/surface"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/notes"
+            android:textColor="@color/text_primary"
+            android:textSize="4sp"
+
+            tools:ignore="SmallSp" />
+    </TableRow>
+
+
+</LinearLayout>

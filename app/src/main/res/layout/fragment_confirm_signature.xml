@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.main.confirm_signature.FragmentConfirmSignature">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/header_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottom_corner_16"
+            android:backgroundTint="@color/surface"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ic_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ripple_corner_8"
+                android:backgroundTint="@color/surface"
+                android:src="@drawable/ic_back"
+                android:tint="@color/text_primary" />
+
+            <TextView
+                style="@style/TextLgSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="@string/signature"
+                android:textColor="@color/text_primary" />
+
+        </FrameLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_corner_16"
+                    android:backgroundTint="@color/surface"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_1"
+                        style="@style/TextSmSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/transparent"
+                        android:checked="true"
+                        android:paddingHorizontal="12dp"
+                        android:text="@string/above_defects_need_to_be_corrected"
+                        android:textColor="@color/text_primary"
+                        app:buttonIcon="@drawable/custom_checkbox"
+                        app:buttonTint="@color/transparent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/background" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_2"
+                        style="@style/TextSmSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:paddingHorizontal="12dp"
+                        android:text="@string/above_defects_corrected"
+                        android:textColor="@color/text_primary"
+                        app:buttonIcon="@drawable/custom_checkbox"
+                        app:buttonTint="@color/transparent" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/driver_signature_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_corner_16"
+                    android:backgroundTint="@color/surface"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextLgSemiBold"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/driver_signature"
+                            android:textColor="@color/text_primary" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_btn_clear_signature">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_clear_driver_signature"
+                                style="@style/TextSmSemiBold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="1dp"
+                                android:background="@drawable/ripple_corner_120"
+                                android:backgroundTint="@color/secondary_surface"
+                                android:drawableStart="@drawable/ic_eraser"
+                                android:drawablePadding="6dp"
+                                android:gravity="center"
+                                android:minHeight="28dp"
+                                android:paddingHorizontal="12dp"
+                                android:paddingVertical="4dp"
+                                android:text="@string/clear"
+                                android:textColor="@color/text_secondary" />
+
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="212dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_signature">
+
+                        <com.github.gcacace.signaturepad.views.SignaturePad
+                            android:id="@+id/driver_signature_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:penColor="@color/text_primary" />
+                    </FrameLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_use_exist_signature"
+                        style="@style/TextSmSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/ripple_corner_120"
+                        android:backgroundTint="@color/brand100"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:minHeight="32dp"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="6dp"
+                        android:singleLine="true"
+                        android:text="@string/use_my_existent_signature"
+                        android:textColor="@color/primary_brand" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mechanic_signature_lay"
+                    android:layout_width="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="96dp"
+                    android:background="@drawable/bg_corner_16"
+                    android:backgroundTint="@color/surface"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextLgSemiBold"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/mechanic_signature"
+                            android:textColor="@color/text_primary" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_btn_clear_signature">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_clear_mechanic_signature"
+                                style="@style/TextSmSemiBold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="1dp"
+                                android:background="@drawable/ripple_corner_120"
+                                android:backgroundTint="@color/secondary_surface"
+                                android:drawableStart="@drawable/ic_eraser"
+                                android:drawablePadding="6dp"
+                                android:gravity="center"
+                                android:minHeight="28dp"
+                                android:paddingHorizontal="12dp"
+                                android:paddingVertical="4dp"
+                                android:text="@string/clear"
+                                android:textColor="@color/text_secondary" />
+
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="212dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_signature">
+
+                        <com.github.gcacace.signaturepad.views.SignaturePad
+                            android:id="@+id/mechanic_signature_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:penColor="@color/text_primary" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_corner_16"
+            android:backgroundTint="@color/surface"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
+                style="@style/PrimaryButtonStyle"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+         />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progress_bar"
+                android:indeterminateTint="@color/white_only"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

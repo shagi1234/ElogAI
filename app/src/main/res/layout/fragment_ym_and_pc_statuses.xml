@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/surface"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ic_status"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/oval"
+                android:backgroundTint="@color/success_on" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                style="@style/TextSmMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:singleLine="true"
+                android:text="@string/stationary"
+                android:textColor="@color/text_primary" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="8dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/ic_gps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_corner_8"
+                android:backgroundTint="@color/secondary_surface"
+                android:padding="8dp"
+                android:src="@drawable/ic_gps" />
+
+
+            <ImageView
+                android:id="@+id/ic_theme_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/bg_corner_8"
+                android:backgroundTint="@color/secondary_surface"
+                android:padding="8dp"
+                android:src="@drawable/ic_moon" />
+
+            <TextView
+                android:id="@+id/tv_eld"
+                style="@style/TextLgBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/bg_corner_12"
+                android:backgroundTint="@color/error_container"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:text="ELD"
+                android:textColor="@color/error_on" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_corner_12"
+            android:backgroundTint="@color/surface"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_lay">
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/TextLgBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_corner_12"
+                android:backgroundTint="@color/secondary_surface"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="4dp"
+                android:text="02:54 AM"
+                android:textColor="@color/text_primary" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/status_lay_oval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bg_oval"
+                        android:backgroundTint="@color/status_pc_overlay"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_short_status"
+                            style="@style/DisplayXLSemiBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pc"
+                            android:textColor="@color/status_pc_color" />
+
+                        <TextView
+                            android:id="@+id/tv_long_status"
+                            style="@style/TextSmMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/personal_conveyance"
+                            android:textColor="@color/status_pc_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/progresses_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="24dp"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:id="@+id/drive_progress_lay"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.progressindicator.CircularProgressIndicator
+                                android:id="@+id/drive_progress_indicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:progress="75"
+                                app:indicatorColor="@color/status_on_color"
+                                app:trackColor="@color/stroke_tertiary"
+                                app:trackCornerRadius="12dp"
+                                app:trackThickness="8dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/TextMdMedium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@string/drive"
+                                    android:textColor="@color/text_secondary" />
+
+                                <TextView
+                                    style="@style/DisplayXsBold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:singleLine="true"
+                                    android:text="7:20"
+                                    android:textColor="@color/text_primary" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/shift_progress_lay"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.progressindicator.CircularProgressIndicator
+                                android:id="@+id/shift_progress_indicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:progress="75"
+                                app:indicatorColor="@color/status_sb_color"
+                                app:trackColor="@color/stroke_tertiary"
+                                app:trackCornerRadius="12dp"
+                                app:trackThickness="8dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/TextMdMedium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@string/shift"
+                                    android:textColor="@color/text_secondary" />
+
+                                <TextView
+                                    style="@style/DisplayXsBold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:singleLine="true"
+                                    android:text="7:20"
+                                    android:textColor="@color/text_primary" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_change_status"
+                style="@style/PrimaryButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/change_duty_status" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,57 @@
+# Bitbucket Pipelines Template to build, test your Android Application.
+
+# This template contains 3 parallel steps to build Android application, run Android code scanning tool and run unit tests.
+# For more details see https://support.atlassian.com/bitbucket-cloud/docs/configure-bitbucket-pipelinesyml/
+
+# Docker for Android SDK 30 with pre-installed build tools and emulator image.
+# Note: This docker image is created and maintained by a non official third party. For more details see: https://hub.docker.com/r/androidsdk/android-30
+image: alvrme/alpine-android:android-34-jdk17
+
+definitions:
+  steps:
+    - step: &build-apk
+        name: Build apk
+        caches:
+          - gradle
+          #- android-sdk
+        script:
+          - export ANDROID_HOME="/opt/atlassian/pipelines/agent/build/android-sdk"
+          - export BRANCH_NAME=$(echo $BITBUCKET_BRANCH | cut -d "/" -f 2 | cut -d "_" -f 2)
+          - echo $BRANCH_NAME
+          - >
+            if [[ $BRANCH_NAME == "sit" || $BRANCH_NAME == "prod" ]]; then
+              export file_path="app/release/app-release.apk"
+            fi
+          - ./gradlew -v
+          - chmod +x gradlew
+          - ./gradlew assembleDebug
+          
+        artifacts:
+          - app/build/outputs/apk/debug/*.apk
+          - echo 'deploying'
+
+        # Send APK to Slack
+    - step: &send-apk-to-slack
+        name: 'Message to slack'
+        script:
+          - export BRANCH_NAME=$(echo $BITBUCKET_BRANCH | cut -d "/" -f 2 | cut -d "_" -f 2)
+          - echo $BRANCH_NAME
+          - export file_path="app/build/outputs/apk/debug/app-debug.apk"
+          - >
+            if [[ $BRANCH_NAME == "prod" ]]; then
+              export file_path="app/release/app-release.apk"
+            fi
+          - apk_base64=$(base64 -w 0 $file_path)
+          - |
+            curl -F file=@"$file_path" -F "initial_comment=Here is apk from git $BRANCH_NAME" -F channels=C06RSAHBE3F -H "Authorization: Bearer xoxb-5400666831830-6902713462240-16U58ybpekxZ3riYMDUs4O45" https://slack.com/api/files.upload
+
+pipelines:
+  branches:
+    dev_*:
+      - step: *build-apk
+      - step: *send-apk-to-slack
+      
+#definitions:
+#  caches:
+#    android-sdk:
+#      path: /opt/sdk

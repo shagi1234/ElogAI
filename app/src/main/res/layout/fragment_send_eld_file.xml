@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.main.inspections.child.FragmentSendEldFile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/header_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottom_corner_16"
+            android:backgroundTint="@color/surface">
+
+            <ImageButton
+                android:id="@+id/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/ripple_corner_8"
+                android:backgroundTint="@color/surface"
+                android:clickable="true"
+                android:padding="8dp"
+                android:src="@drawable/ic_back"
+                app:tint="@color/text_primary" />
+
+            <TextView
+                android:layout_marginVertical="10dp"
+
+                android:id="@+id/tv_header_title"
+                style="@style/TextLgSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="48dp"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:text="@string/send_eld_output_file_to_dot"
+                android:textColor="@color/text_primary" />
+
+        </FrameLayout>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/bg_corner_16"
+        android:backgroundTint="@color/surface"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="24dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ic_upload_folder"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/secondary_surface"
+            android:padding="8dp"
+            android:src="@drawable/ic_folder_upload"
+            app:riv_mutate_background="true"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/tv_send_eld_file"
+            style="@style/TextSmSemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:singleLine="true"
+            android:text="@string/send_eld_file_to_dot"
+            android:textColor="@color/text_primary" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_web_server"
+                style="@style/TextSmSemiBold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                android:buttonTint="@color/primary_brand"
+                android:checked="true"
+                android:singleLine="true"
+                android:paddingStart="8dp"
+                android:text="@string/web_server"
+                android:textColor="@color/text_primary" />
+
+            <RadioButton
+                android:id="@+id/rb_email"
+                style="@style/TextSmSemiBold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:buttonTint="@color/primary_brand"
+                android:paddingStart="8dp"
+                android:singleLine="true"
+                android:text="@string/email"
+                android:textColor="@color/text_primary" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_output_file_commit"
+            style="@style/TextSmSemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:singleLine="true"
+            android:text="@string/output_file_commit"
+            android:textColor="@color/text_primary" />
+
+
+        <EditText
+            android:id="@+id/edt_output_commit"
+            style="@style/TextMdMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input_selector"
+            android:hint="@string/the_text_will_change"
+            android:inputType="textMultiLine"
+            android:maxLength="60"
+            android:padding="16sp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_length_counter"
+            style="@style/TextSmRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="0/60"
+            android:textColor="@color/text_secondary" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_send"
+            style="@style/PrimaryButtonStyle"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/send"
+          />
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

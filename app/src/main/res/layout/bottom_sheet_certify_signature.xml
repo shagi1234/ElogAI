@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/cv_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="8dp"
+                android:src="@drawable/ic_bottom_sheet_thumb"
+                app:tint="@color/surface_disabled" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TextXlBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/certify_logs"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tv_info"
+                style="@style/TextMdMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center_horizontal"
+                android:text="@string/i_hereby_certify_that_my_date_entries_and_my_record_of_duty_status_for_this_24_hour_period_are_true_and_correct"
+                android:textColor="@color/text_secondary" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_use_exist_signature"
+                style="@style/TextSmSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/ripple_corner_120"
+                android:backgroundTint="@color/brand100"
+                android:clickable="true"
+                android:gravity="center"
+                android:minHeight="32dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="6dp"
+                android:singleLine="true"
+                android:text="@string/use_my_existent_signature"
+                android:textColor="@color/primary_brand" />
+
+            <FrameLayout
+                android:id="@+id/cr_signature"
+                android:layout_width="match_parent"
+                android:layout_height="212dp"
+                android:layout_marginHorizontal="16sp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_signature">
+
+                <com.github.gcacace.signaturepad.views.SignaturePad
+                    android:id="@+id/signature_view"
+                    app:penColor="@color/text_primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_sign_here"
+                    style="@style/TextMdSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/sign_here"
+                    android:textColor="@color/text_secondary" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_btn_clear_signature">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_clear"
+                    style="@style/TextSmSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_corner_120"
+                    android:drawableStart="@drawable/ic_eraser"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:layout_margin="1dp"
+                    android:backgroundTint="@color/secondary_surface"
+                    android:minHeight="28dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:text="@string/clear"
+                    android:textColor="@color/text_secondary" />
+
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_accept"
+                style="@style/TextMdSemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16sp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/ripple_corner_12"
+                android:backgroundTint="@color/primary_brand"
+                android:gravity="center"
+                android:text="@string/approve_signature"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_back"
+                style="@style/TextMdSemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/ripple_corner_12"
+                android:backgroundTint="@color/surface"
+                android:gravity="center"
+                android:text="@string/back_to_logs"
+                android:textColor="@color/text_secondary" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

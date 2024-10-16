@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PrimaryCheckboxStyle">
+        <item name="android:textAppearance">@style/TextSmSemiBold</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:paddingHorizontal">12dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="buttonIcon">@drawable/custom_checkbox</item>
+        <item name="buttonTint">@color/transparent</item>
+    </style>
+
+    <style name="SelectableTextWithIconMdSemiBold">
+        <item name="android:textAppearance">@style/TextMdSemiBold</item>
+        <item name="android:background">@drawable/bg_corner_12</item>
+        <item name="android:backgroundTint">@color/text_with_icon_bg_selector</item>
+        <item name="android:drawableTint">@color/primary_icon_selector</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="SelectableTextMdSemiBold">
+        <item name="android:textAppearance">@style/TextMdSemiBold</item>
+        <item name="android:background">@drawable/bg_corner_12</item>
+        <item name="android:backgroundTint">@color/text_with_icon_bg_selector</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+<!--    <style name="CustomRatingBarStyle" parent="Widget.AppCompat.RatingBar">-->
+<!--        <item name="android:progressDrawable">@drawable/rating_bar_indicator</item>-->
+<!--        <item name="android:minHeight">24dp</item>-->
+<!--        <item name="android:maxHeight">24dp</item>-->
+<!--        <item name="android:rating">3</item>-->
+<!--        <item name="android:numStars">5</item>-->
+<!--        <item name="android:max">5</item>-->
+<!--    </style>-->
+</resources>

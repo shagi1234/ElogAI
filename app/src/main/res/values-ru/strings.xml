@@ -1,0 +1,371 @@
+<resources>
+    <!-- App and Navigation -->
+    <string name="app_name">ELogAI</string>
+    <string name="title_dashboard">Панель</string>
+    <string name="title_logs">Журналы</string>
+    <string name="title_chat">Чат</string>
+    <string name="title_more">Ещё</string>
+
+    <!-- Duty Status -->
+    <string name="on_duty">НА СЛУЖБЕ</string>
+    <string name="off_duty">ВНЕ СЛУЖБЫ</string>
+    <string name="ym">ДВ</string>
+    <string name="pc">ЛП</string>
+    <string name="sb">СП</string>
+    <string name="on">HC</string>
+    <string name="off">ОТСТАНОВКА</string>
+
+    <string name="personal_conveyance">Личная перевозка</string>
+    <string name="drive">Езда</string>
+    <string name="shift">Смена</string>
+    <string name="yard_move">Движение по двору</string>
+    <string name="sleep">СОН</string>
+    <string name="driving">ВОЖДЕНИЕ</string>
+    <string name="last">ПОСЛЕДНИЙ</string>
+    <string name="change_duty_status">Изменить статус</string>
+    <string name="cycle">Цикл</string>
+    <string name="stationary">Стационарный</string>
+
+    <!-- Languages -->
+    <string name="english">Английский</string>
+    <string name="russian">Русский</string>
+    <string name="turkmen">Туркменский</string>
+
+    <!-- Settings and User Info -->
+    <string name="licence">Лицензия:</string>
+    <string name="user_number">Номер пользователя:</string>
+    <string name="issued_state">Выдавший штат:</string>
+    <string name="switch_driver">Сменить водителя</string>
+    <string name="permissions">Разрешения</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="keep_screen">Оставить экран</string>
+    <string name="reload_logs">Перезагрузить журналы</string>
+    <string name="language">Язык</string>
+    <string name="check_update">Проверить обновление</string>
+    <string name="leave_truck">Покинуть грузовик</string>
+    <string name="device_volume">Громкость устройства</string>
+    <string name="appearance">Внешний вид</string>
+    <string name="inspections">Проверки</string>
+
+    <!-- DVIR (Driver Vehicle Inspection Report) -->
+    <string name="create_dvir">Создать DVIR</string>
+    <string name="vehicles">Транспортные средства</string>
+    <string name="trailers">Прицепы</string>
+    <string name="location">Местоположение</string>
+    <string name="time">Время:</string>
+    <string name="odometer">Одометр</string>
+    <string name="defects">Дефекты</string>
+    <string name="unit_defects">Дефекты блока:</string>
+    <string name="trailer_defects">Дефекты прицепа:</string>
+    <string name="add_defects">Добавить дефекты</string>
+    <string name="defects_list">Список дефектов</string>
+    <string name="please_sign_the_following_uncertified_records">Пожалуйста, подпишите следующие несертифицированные записи</string>
+    <string name="delete_the_report">Удалить отчет</string>
+    <string name="click_the_button_below_to_create_dvir">Нажмите кнопку ниже, чтобы создать DVIR.</string>
+
+    <!-- Login and Authentication -->
+    <string name="elog_ai">ELog AI</string>
+    <string name="username">Имя пользователя</string>
+    <string name="enter_your_username">Введите ваше имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="enter_your_password">Введите ваш пароль</string>
+    <string name="login">Войти</string>
+    <string name="otp_verification">Проверка OTP</string>
+    <string name="enter_the_code_from_the_mail_sent_to">Введите код из письма, отправленного на</string>
+    <string name="code">Код</string>
+    <string name="enter_6_digit_code">Введите 6-значный код</string>
+    <string name="don_t_receive_the_otp">Не получили OTP?</string>
+    <string name="verify">Проверить</string>
+    <string name="error_while_login">Ошибка при входе</string>
+    <string name="wrong_username_or_password">Неверное имя пользователя или пароль!</string>
+    <string name="you_are_already_in_into_elog_ai_on_another_device">Вы уже вошли в «Elog AI» с другого устройства</string>
+    <string name="please_log_out_to_prevent_potential_data_loss">Пожалуйста, выйдите, чтобы избежать потенциальной потери данных</string>
+    <string name="continue_anyway">Продолжить в любом случае</string>
+    <string name="return_to_login">Вернуться к входу</string>
+
+    <!-- Signature -->
+    <string name="signature">Подпись</string>
+    <string name="driver_signature">Подпись водителя</string>
+    <string name="use_my_existent_signature">Использовать мою существующую подпись</string>
+    <string name="clear_signature">Очистить подпись</string>
+    <string name="clear">Очистить</string>
+    <string name="mechanic_signature">Подпись механика</string>
+    <string name="remove_existant_signature">Удалить существующую подпись</string>
+    <string name="approve_signature">Утвердить подпись</string>
+    <string name="sign_here">Подпишите здесь</string>
+    <string name="would_you_like_to_save_your_signature">Хотите сохранить вашу подпись?</string>
+    <string name="if_you_save_your_signature_you_can_use_it_multiple_times_in_the_future">Если вы сохраните подпись, вы сможете использовать ее несколько раз в будущем</string>
+    <string name="above_defects_need_to_be_corrected">Вышеуказанные дефекты должны быть исправлены</string>
+    <string name="above_defects_corrected">Вышеуказанные дефекты исправлены</string>
+
+    <!-- Inspections -->
+    <string name="send_logs">Отправить журналы</string>
+    <string name="output_file_commit">Фиксация выходного файла</string>
+    <string name="send">Отправить</string>
+    <string name="send_eld_output_file_to_dot">Отправить выходной файл ELD в DOT</string>
+    <string name="mail_logs">Отправить журналы по почте</string>
+    <string name="send_eld_file_to_dot">Отправить файл ELD в DOT</string>
+    <string name="web_server">Веб-сервер</string>
+    <string name="email">Электронная почта</string>
+    <string name="e_mail">Электронная почта</string>
+    <string name="enter_receipt_e_mail">Введите электронную почту для получения</string>
+    <string name="the_text_will_change">Текст изменится</string>
+    <string name="your_logs_sent_to_the_administration_thank_you_for_your_time">Ваши журналы отправлены в администрацию. Спасибо за ваше время!</string>
+
+    <!-- Certify Logs -->
+    <string name="certify_logs">Заверить журналы</string>
+    <string name="certify">Заверить</string>
+    <string name="back_to_logs">Вернуться к журналам</string>
+    <string name="your_logs_certified">Ваши журналы заверены</string>
+    <string name="i_hereby_certify_that_my_date_entries_and_my_record_of_duty_status_for_this_24_hour_period_are_true_and_correct">Настоящим я подтверждаю, что мои записи дат и мой отчет о статусе дежурства за этот 24-часовой период являются верными и правильными</string>
+
+    <!-- Log Details -->
+    <string name="log_details">Детали журнала</string>
+    <string name="status">Статус</string>
+    <string name="documents">Документы:</string>
+    <string name="notes">Заметки:</string>
+    <string name="duration">Продолжительность:</string>
+    <string name="dismiss">Закрыть</string>
+    <string name="annotate">Аннотировать</string>
+    <string name="note">Заметкa</string>
+    <string name="quick_note">Быстрая заметка</string>
+    <string name="documents_">Документы</string>
+    <string name="are_you_sure_you_want_to_edit_this_log">Вы уверены, что хотите отредактировать этот журнал!</string>
+    <string name="yes_save_changes">Да, сохранить изменения</string>
+    <string name="sign">Подписать</string>
+    <string name="submit">Отправить</string>
+
+    <!-- Error Messages -->
+    <string name="something_went_wrong">Что-то пошло не так</string>
+    <string name="check_internet_connection">Проверьте подключение к интернету</string>
+
+    <!-- Device Connection -->
+    <string name="scanning_">Сканирование…</string>
+    <string name="search_for_devices">Поиск устройств</string>
+    <string name="device_is_not_found">Устройство не найдено</string>
+    <string name="select_eld_device">Выберите устройство ELD</string>
+
+    <!-- Location -->
+    <string name="confirm">Подтвердить</string>
+    <string name="check_your_location">Проверьте ваше местоположение</string>
+    <string name="your_location_may_be_wrong_would_you_like_to_update_it_it_might_take_minute">Ваше местоположение может быть неверным. Хотите обновить его? Это может занять минуту</string>
+    <string name="address">Адрес:</string>
+    <string name="n_a">Н/Д</string>
+    <string name="don_t_show_again_update_on">Не показывать снова. (Обновление включено)</string>
+    <string name="update_now">Обновить сейчас</string>
+    <string name="not_now">Не сейчас</string>
+
+    <!-- Chat -->
+    <string name="alert">Предупреждение</string>
+    <string name="select_from_album">Выбрать из альбома</string>
+    <string name="camera">Камера</string>
+    <string name="select_from_files">Выбрать из файлов</string>
+    <string name="write_message">Написать сообщение…</string>
+    <string name="slide_to_cancel">Проведите для отмены</string>
+
+    <!-- App Theme -->
+    <string name="select_mode">Выберите режим</string>
+    <string name="light_mode">Светлый режим</string>
+    <string name="dark_mode">Темный режим</string>
+    <string name="system">Системный</string>
+
+    <!-- Feedback -->
+    <string name="rate_us">Оцените нас</string>
+    <string name="how_would_you_rate_our_app_experience">Как бы вы оценили опыт использования нашего приложения?</string>
+    <string name="no_thanks">Нет, спасибо!</string>
+
+    <!-- Connection Status -->
+    <string name="no_internet_connection">Нет подключения к интернету</string>
+    <string name="refresh">Обновить</string>
+
+    <!-- Permissions -->
+    <string name="bluetooth_permission">Разрешение Bluetooth</string>
+    <string name="required_permissions">Необходимые разрешения</string>
+    <string name="this_app_collects_location_data_to_enable_tracking_even_when_the_app_is_closed_or_not_in_us">Это приложение собирает данные о местоположении для обеспечения отслеживания даже когда приложение закрыто или не используется.</string>
+    <string name="understand">Понятно</string>
+    <string name="all_required_permission_are_not_granted_the_aplication_will_not_be_able_to_as_it_intended_to_be">Не все необходимые разрешения предоставлены, приложение не сможет работать как задумано.</string>
+    <string name="in_order_to_connect_to_the_eld_device_you_must_first_allow_the_bluetooth_permission_and_turn_it_on">Для подключения к устройству ELD необходимо предоставить разрешение на Bluetooth и включить его</string>
+
+
+    <!-- User Manual -->
+    <string name="user_manual">Руководство пользователя</string>
+    <string name="step_by_step_guid_for_drivers_during_inspections">Пошаговое руководство для водителей во время проверок</string>
+    <string name="installation">Установка</string>
+    <string name="malfunction">Неисправность</string>
+    <string name="diagnosis">Диагностика</string>
+    <string name="diagnosis_of_device">Диагностика устройства</string>
+    <string name="eld_coordinates">Координаты ELD</string>
+    <string name="gps_coordinates">GPS координаты</string>
+    <string name="language_change">Изменение языка</string>
+    <string name="the_source_for_both_drivers_and_dispatchers_to_guide_while_using_elog_ai">Источник для руководства как водителей, так и диспетчеров при использовании Elog AI</string>
+    <string name="quick_instruction_to_setup_both_driver_application_and_eld_device_before_using_elog_ai">Краткая инструкция по настройке приложения водителя и устройства ELD перед использованием Elog AI</string>
+    <string name="the_guide_when_eld_or_driver_application_does_not_work_as_intended">Руководство на случай, если ELD или приложение водителя не работает как предполагалось</string>
+
+    <!-- Account Actions -->
+    <string name="log_out">Выйти</string>
+    <string name="go_to_settings">Перейти к настройкам</string>
+
+    <!-- Inspection -->
+    <string name="review_logs_for_previous_7_days_today">Просмотреть журналы за предыдущие 7 дней + сегодня</string>
+    <string name="tap_begin_inspection_and_hand_your_device_to_the_officer">Нажмите "Начать проверку" и передайте устройство офицеру</string>
+    <string name="begin_inspection">Начать проверку</string>
+    <string name="send_logs_for_previous_7_days_today">Отправить журналы за предыдущие 7 дней + сегодня</string>
+
+    <!-- ELD Actions -->
+    <string name="reset_eld">Сбросить ELD</string>
+    <string name="do_you_really_want_to_reset_eld">Вы действительно хотите сбросить ELD?</string>
+    <string name="yes_i_do">Да, хочу</string>
+    <string name="the_reset_was_completed_succesfully">Сброс успешно завершен</string>
+    <string name="connect_eld">Подключить ELD</string>
+
+    <!-- Duty Status Update -->
+    <string name="update_duty_status">Обновить статус дежурства</string>
+    <string name="start_time">Время начала</string>
+    <string name="end_time">Время окончания</string>
+    <string name="engine_hours">Моточасы</string>
+    <string name="successfully_edited">Успешно отредактировано</string>
+    <string name="working_on_it">Работаем над этим</string>
+    <string name="fixed">Исправлено</string>
+
+    <!-- ELD Connection Status -->
+    <string name="eld_connected">ELD подключен</string>
+    <string name="eld_not_connected">ELD не подключен</string>
+
+    <!-- Driving Actions -->
+    <string name="continue_driving">Продолжить вождение</string>
+    <string name="logs_were_sent_successfully">Журналы успешно отправлены</string>
+    <string name="update_main_info">Обновить основную информацию</string>
+    <string name="trailer">Прицеп</string>
+    <string name="do_you_really_want_to_leave_truck">Вы действительно хотите покинуть грузовик?</string>
+
+    <!-- Misc Actions -->
+    <string name="change_status">Изменить статус</string>
+
+    <!-- Location Settings -->
+    <string name="enable_location">Включить местоположение</string>
+    <string name="your_location_is_turned_off_please_enable_it_to_use_this_feature">Ваше местоположение выключено. Пожалуйста, включите его для использования этой функции.</string>
+    <string name="location_settings">Настройки местоположения</string>
+
+    <!-- Bluetooth Settings -->
+    <string name="enable_bluetooth">Включить Bluetooth</string>
+    <string name="your_bluetooth_is_turned_off_please_enable_it_to_use_this_feature">Ваш Bluetooth выключен, пожалуйста, включите его для использования этой функции</string>
+    <string name="bluetooth_settings">Настройки Bluetooth</string>
+
+    <!-- Driver Information -->
+    <string name="driver_name">Имя водителя</string>
+    <string name="main_office_adress">Адрес главного офиса</string>
+    <string name="main_terminal_adress">Адрес главного терминала</string>
+    <string name="driver">Водитель</string>
+    <string name="driver_id">ID водителя</string>
+    <string name="co_drivers_id">ID сменных водителей</string>
+    <string name="dl_number">Номер водительского удостоверения</string>
+    <string name="timezone">Часовой пояс</string>
+    <string name="eld_id">ID ELD</string>
+    <string name="timezone_offset">Смещение часового пояса</string>
+
+    <!-- Common Actions -->
+    <string name="cancel">Отмена</string>
+    <string name="ok">OK</string>
+    <string name="save">Сохранить</string>
+    <string name="yes">Да</string>
+    <string name="done">Готово</string>
+    <string name="not_ready">Не готово</string>
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+
+    <!-- Violation Statuses -->
+    <string name="violation_on_break_status">Нарушение в статусе перерыва</string>
+    <string name="_break">Перерыв</string>
+    <string name="violation">Нарушение</string>
+    <string name="violation_on_drive_status">Нарушение в статусе вождения</string>
+    <string name="violation_on_shift">Нарушение на смене</string>
+    <string name="everything_is_on_the_way_keep_moving">Всё идет по плану. Продолжайте движение!</string>
+    <string name="you_are_close_to_violate_the_drive_rule">Вы близки к нарушению правила вождения</string>
+
+    <!-- Log Report -->
+    <string name="eld_provide">Предоставление ELD</string>
+    <string name="eld_registration_id">ID регистрации ELD</string>
+    <string name="carrier">Перевозчик</string>
+    <string name="vehicles_vin">Транспортное средство (VIN)</string>
+    <string name="usdot">USDOT #</string>
+    <string name="main_office">Главный офис</string>
+    <string name="home_terminal">Домашний терминал</string>
+    <string name="distance">Расстояние</string>
+    <string name="shipping_docs">Документы на отгрузку</string>
+    <string name="malfunction_indicators">Индикаторы неисправностей</string>
+    <string name="data_diagnostic_indicators">Индикаторы диагностики данных</string>
+    <string name="current_location">Текущее местоположение</string>
+    <string name="unidentified_driver_records">Записи неопознанного водителя</string>
+    <string name="driver_daily_log">ЕЖЕДНЕВНЫЙ ЖУРНАЛ ВОДИТЕЛЯ</string>
+    <string name="no">Нет</string>
+    <string name="time_edt">Время (EDT)</string>
+    <string name="vehicle">Транспортное средство</string>
+    <string name="eng_hours">Часы работы двигателя</string>
+    <string name="certified">Сертифицировано</string>
+    <string name="not_certified">Не сертифицировано</string>
+    <string name="log_reports">Отчеты журнала</string>
+    <string name="daily_log">Ежедневный журнал</string>
+
+    <!-- Quick Notes -->
+    <string name="pti">PTI</string>
+    <string name="scale">Весы</string>
+    <string name="dot">DOT</string>
+    <string name="repairs">Ремонт</string>
+    <string name="pick_up">Забрать</string>
+    <string name="delivery">Доставка</string>
+    <string name="fuel">Топливо</string>
+    <string name="drop">Сброс</string>
+    <string name="hook">Сцепка</string>
+    <string name="other">Другое</string>
+    <string name="rest">Отдых</string>
+    <string name="shower">Душ</string>
+    <string name="restroom">Туалет</string>
+    <string name="breakfast">Завтрак</string>
+    <string name="dinner">Ужин</string>
+    <string name="lunch">Обед</string>
+    <string name="shopping">Покупки</string>
+    <string name="restaurant">Ресторан</string>
+    <string name="home">Дом</string>
+    <string name="office">Офис</string>
+    <string name="gym">Спортзал</string>
+    <string name="truck_stop">Стоянка грузовиков</string>
+    <string name="main_content">Основное содержание</string>
+    <string name="driver_info">Информация о водителе</string>
+    <string name="vehicle_id">ID транспортного средства</string>
+    <string name="unit">Блок</string>
+    <string name="battery">Аккумулятор</string>
+    <string name="brake_accessories">Тормозные аксессуары</string>
+    <string name="defroster_heater">Размораживатель / Обогреватель</string>
+    <string name="brakes_service">Тормоза, обслуживание</string>
+    <string name="coupling_devices">Сцепные устройства</string>
+    <string name="landing_gear">Опорное устройство</string>
+    <string name="suspension_system">Система подвески</string>
+    <string name="lights_all">Освещение - Всё</string>
+
+    <!-- Switch Driver -->
+    <string name="do_you_really_want_to_switch_to_co_driver">Вы действительно хотите переключиться на со-водителя?</string>
+    <string name="select_shipping_document">Выберите документ на отгрузку</string>
+
+    <!-- Diagnosis  -->
+    <string name="good">Хорошо</string>
+    <string name="not_working">Не работает</string>
+    <string name="fused_coordinates">Объединенные координаты</string>
+    <string name="network_quality">Качество сети</string>
+
+    <!-- Feedback  -->
+    <string name="your_feedback">Ваш отзыв</string>
+    <string name="send_feedback">Отправить отзыв</string>
+    <string name="return_to_truck">Return to truck</string>
+    <string name="version_num">Version 1.0.0</string>
+
+    <!-- Logout  -->
+    <string name="do_you_really_want_to_logout">Вы действительно хотите выйти из системы?</string>
+
+    <string-array name="log_tabs">
+        <item>Журналы</item>
+        <item>Главное</item>
+        <item>DVIR</item>
+    </string-array>
+
+
+</resources>

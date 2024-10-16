@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "863947480322",
+    "project_id": "elogai-c35cc",
+    "storage_bucket": "elogai-c35cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863947480322:android:c7dd221449afa102a9761b",
+        "android_client_info": {
+          "package_name": "com.selbiconsulting.elog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnUnZvNBw3MNCXGZylbUgHsu-ceVTVgg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

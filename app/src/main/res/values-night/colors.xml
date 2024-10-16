@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#0D121C</color>
+    <color name="surface">#121926</color>
+    <color name="primary_disabled">#364152</color>
+    <color name="surface_disabled">#4B5565</color>
+    <color name="secondary_surface">#202939</color>
+    <color name="reverse_background">#E3E8EF</color>
+    <color name="on_background">#F8FAFC</color>
+    <color name="text_primary">#FCFCFD</color>
+    <color name="on_primary">#D1E0FF</color>
+    <color name="stroke_secondary">#364152</color>
+    <color name="gray100">#0D121C</color>
+    <color name="text_tertiary">#9AA4B2</color>
+    <color name="stroke_tertiary">#202939</color>
+    <color name="logo_text">#FFFFFF</color>
+
+
+    //status colors
+    <color name="status_on_color">#2970FF</color>
+    <color name="status_on_overlay">#402970FF</color>
+    <color name="status_off_color">#364152</color>
+    <color name="status_off_overlay">#40364152</color>
+    <color name="status_sb_color">#F79009</color>
+    <color name="status_sb_overlay">#40F79009</color>
+    <color name="status_ym_color">#29B2FF</color>
+    <color name="status_ym_overlay">#4029B2FF</color>
+    <color name="status_pc_color">#697586</color>
+    <color name="status_pc_overlay">#40697586</color>
+
+</resources>

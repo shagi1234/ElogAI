@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The following animation uses two ObjectAnimators that animate two properties called
+     xFraction and yFraction concurrently. The xFraction property uses a linear interpolator
+     and the yFraction property uses a bounce interpolator. Note that the property names
+     xFraction and yFraction are custom and the animation framework will derive Java
+     method names that it will invoke via the Java reflection API. E.g., property
+     xFraction will result in invocations of methods getXFraction() and setXFraction()
+     (see class MyImageView that implements those getters and setters) -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:propertyName="xFraction"
+        android:duration="5000"
+        android:valueTo="1"
+        android:valueType="floatType"/>
+    <objectAnimator
+        android:propertyName="yFraction"
+        android:interpolator="@android:anim/bounce_interpolator"
+        android:duration="5000"
+        android:valueTo="1"
+        android:valueType="floatType"/>
+</set>

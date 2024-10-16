@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/surface"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/driver_daily_log"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_log_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/tv_some_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/text_secondary"
+        android:text="Some desc"
+        android:textSize="12sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <TableRow
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/driver"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_driver_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="Uzman Test" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/driver_id"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_driver_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="003PC00000BzOwjYAF" />
+
+
+            <TextView
+                android:id="@+id/tv_driver_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0.5dp"
+                android:layout_weight="1.5"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="ST" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/co_drivers_id"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_co_driver_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="Prod 252" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/dl_number"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_dl_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="43124322aa" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/timezone"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_time_zone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="EST" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/eld_id"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_eld_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/timezone_offset"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_time_zone_offset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="+0" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/eld_provide"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_eld_provide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/eld_registration_id"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_eld_registration_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="SOME ID" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/carrier"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_carrier"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/vehicles_vin"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_vehicles_vin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="molestiae" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/usdot"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_usdot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/main_office"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_main_office"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/home_terminal"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_home_terminal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/distance"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="SOME DISTANCE" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="SOME DISTANCE" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/trailer"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_trailer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="55447" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/shipping_docs"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_shipping_docs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="SHIPPING DOCS" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/malfunction_indicators"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_malfunction_indicators"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="SOME INDICATOR" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/data_diagnostic_indicators"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_data_diagnostic_indicators"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="SOME INDICATOR" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/current_location"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_current_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="SOME LOCATIN" />
+        </TableRow>
+
+        <TableRow
+             android:layout_marginTop="-1dp"
+            android:background="@color/text_primary"
+            android:padding="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/unidentified_driver_records"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_unidentified_driver_records"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                tools:text="SOME RECORDS" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
+
+
+

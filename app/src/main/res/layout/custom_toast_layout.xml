@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toast_root"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <FrameLayout
+        android:layout_margin="1dp"
+        android:id="@+id/status_bg"
+        android:background="@drawable/bg_corner_12"
+        android:backgroundTint="@color/success_on"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/bg_corner_12"
+            android:backgroundTint="@color/gray100"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_success_state" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:singleLine="true"
+                        android:id="@+id/tv_state_title"
+                        style="@style/TextSmSemiBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary"
+                        tools:text="Title of State" />
+
+                    <TextView
+                        android:singleLine="true"
+                        android:id="@+id/tv_state_description"
+                        style="@style/TextSmMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary"
+                        tools:text="Description for State" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:backgroundTint="@color/gray100"
+                    android:id="@+id/ic_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_clear" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </FrameLayout>
+

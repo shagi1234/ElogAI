@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/header_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottom_corner_16"
+            android:backgroundTint="@color/surface"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ic_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ripple_corner_8"
+                android:backgroundTint="@color/surface"
+                android:src="@drawable/ic_back"
+                android:tint="@color/text_primary" />
+
+            <TextView
+                style="@style/TextLgSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="@string/sign"
+                android:textColor="@color/text_primary" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_corner_16"
+            android:backgroundTint="@color/surface"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                style="@style/TextMdMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/i_hereby_certify_that_my_date_entries_and_my_record_of_duty_status_for_this_24_hour_period_are_true_and_correct"
+                android:textColor="@color/text_secondary" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="212dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_signature">
+
+                <com.github.gcacace.signaturepad.views.SignaturePad
+                    android:id="@+id/signature_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:penColor="@color/text_primary" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_use_exist_signature"
+                style="@style/TextSmSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ripple_corner_120"
+                android:backgroundTint="@color/brand100"
+                android:clickable="true"
+                android:gravity="center"
+                android:minHeight="32dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="6dp"
+                android:singleLine="true"
+                android:text="@string/use_my_existent_signature"
+                android:textColor="@color/primary_brand" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_submit"
+                style="@style/TextMdSemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ripple_corner_12"
+                android:backgroundTint="@color/primary_brand"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_clear_signature"
+                style="@style/TextMdSemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ripple_corner_12"
+                android:backgroundTint="@color/surface"
+                android:gravity="center"
+                android:text="@string/clear_signature"
+                android:textColor="@color/text_secondary" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/fragmentFlow">
+
+
+    <fragment
+        android:id="@+id/fragmentFlow"
+        android:name="com.selbiconsulting.elog.ui.main.flow.FragmentFlow"
+        android:label="fragment_flow"
+        tools:layout="@layout/fragment_flow">
+        <action
+            android:id="@+id/action_fragmentFlow_to_fragmentChartMode"
+            app:destination="@id/fragmentChartMode"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_fragmentFlow_to_fragmentInspections"
+            app:destination="@id/fragmentInspections"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_fragmentFlow_to_fragmentCreateDvir2"
+            app:destination="@id/fragmentCreateDvir2"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_fragmentFlow_to_fragmentChangeStatus"
+            app:destination="@id/fragmentChangeStatus"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_fragmentFlow_to_fragmentSingleCertifyLogs"
+            app:destination="@id/fragmentSingleCertifyLogs"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_fragmentFlow_to_fragmentUserManual2"
+            app:destination="@id/fragmentUserManual2"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_fragmentFlow_to_fragmentUpdateDutyStatus"
+            app:destination="@id/fragmentUpdateDutyStatus"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_fragmentFlow_to_fragmentConfirmSignature2"
+            app:destination="@id/fragmentConfirmSignature"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_fragmentFlow_to_fragmentFullScreenGraph"
+            app:destination="@id/fragmentFullScreenGraph"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_fragmentFlow_to_fragmentUpdateMainInfo"
+            app:destination="@id/fragmentUpdateMainInfo"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentChartMode"
+        android:name="com.selbiconsulting.elog.ui.main.chart_mode.FragmentChartMode"
+        android:label="fragment_chart_mode"
+        tools:layout="@layout/fragment_chart_mode" />
+    <fragment
+        android:id="@+id/fragmentInspections"
+        android:name="com.selbiconsulting.elog.ui.main.inspections.FragmentInspections"
+        android:label="fragment_inspections"
+        tools:layout="@layout/fragment_inspections">
+        <action
+            android:id="@+id/action_fragmentInspections_to_fragmentLogReport"
+            app:destination="@id/fragmentLogReport"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_fragmentInspections_to_fragmentSendLogs2"
+            app:destination="@id/fragmentSendLogs2"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_fragmentInspections_to_fragmentSendEldFile"
+            app:destination="@id/fragmentSendEldFile"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogReport"
+        android:name="com.selbiconsulting.elog.ui.main.inspections.child.FragmentLogReport"
+        android:label="fragment_log_report"
+        tools:layout="@layout/fragment_log_report" />
+    <fragment
+        android:id="@+id/fragmentCreateDvir2"
+        android:name="com.selbiconsulting.elog.ui.main.create_dvir.FragmentCreateDvir"
+        android:label="fragment_create_dvir"
+        tools:layout="@layout/fragment_create_dvir">
+        <action
+            android:id="@+id/action_fragmentCreateDvir2_to_fragmentDefects2"
+            app:destination="@id/fragmentDefects2"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_fragmentCreateDvir2_to_fragmentConfirmSignature"
+            app:destination="@id/fragmentConfirmSignature"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <argument
+            android:name="location_name"
+            app:argType="string"
+            app:nullable="false" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDefects2"
+        android:name="com.selbiconsulting.elog.ui.main.defects.FragmentDefects"
+        android:label="fragment_defects"
+        tools:layout="@layout/fragment_defects" />
+    <fragment
+        android:id="@+id/fragmentConfirmSignature"
+        android:name="com.selbiconsulting.elog.ui.main.confirm_signature.FragmentConfirmSignature"
+        android:label="fragment_confirm_signature"
+        tools:layout="@layout/fragment_confirm_signature">
+        <argument
+            android:name="type"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="dvir"
+            app:argType="com.selbiconsulting.elog.data.model.entity.EntityDvir"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_fragmentConfirmSignature_to_fragmentFlow"
+            app:destination="@id/fragmentFlow"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_down"
+            app:popUpTo="@id/fragmentFlow"
+            app:popUpToInclusive="true" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSendLogs2"
+        android:name="com.selbiconsulting.elog.ui.main.inspections.child.FragmentSendLogs"
+        android:label="fragment_send_logs"
+        tools:layout="@layout/fragment_send_logs" />
+    <fragment
+        android:id="@+id/fragmentSendEldFile"
+        android:name="com.selbiconsulting.elog.ui.main.inspections.child.FragmentSendEldFile"
+        android:label="fragment_send_eld_file"
+        tools:layout="@layout/fragment_send_eld_file" />
+    <fragment
+        android:id="@+id/fragmentChangeStatus"
+        android:name="com.selbiconsulting.elog.ui.main.change_duty_status.FragmentChangeStatus"
+        android:label="FragmentChangeStatus"
+        tools:layout="@layout/fragment_change_duty_status">
+        <action
+            android:id="@+id/action_fragmentChangeStatus_to_fragmentFlow"
+            app:destination="@id/fragmentFlow"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_down"
+            app:popUpTo="@id/fragmentFlow"
+            app:popUpToInclusive="true" />
+
+        <argument
+            android:name="status_order"
+            android:defaultValue="4"
+            app:argType="integer" />
+
+        <argument
+            android:name="is_pc_allowed"
+            app:argType="boolean" />
+
+
+        <action
+            android:id="@+id/action_fragmentChangeStatus_to_fragmentYmAndPcStatuses"
+            app:destination="@id/fragmentYmAndPcStatuses"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSingleCertifyLogs"
+        android:name="com.selbiconsulting.elog.ui.main.certify_logs.FragmentSingleCertifyLogs"
+        android:label="FragmentSingleCertifyLogs"
+        tools:layout="@layout/fragment_single_day_certify_log">
+
+        <argument
+            android:name="date"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentSingleCertifyLogs_to_fragmentFlow"
+            app:destination="@id/fragmentFlow"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/fragmentFlow"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUserManual2"
+        android:name="com.selbiconsulting.elog.ui.main.user_manual.FragmentUserManual"
+        android:label="fragment_user_manual"
+        tools:layout="@layout/fragment_user_manual">
+        <action
+            android:id="@+id/action_fragmentUserManual2_to_fragmentReadPDF"
+            app:destination="@id/fragmentReadPDF"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentReadPDF"
+        android:name="com.selbiconsulting.elog.ui.main.user_manual.FragmentReadPDF"
+        android:label="FragmentReadPDF">
+        <argument
+            android:name="header_title"
+            app:argType="string" />
+        <argument
+            android:name="pdf_type"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUpdateDutyStatus"
+        android:name="com.selbiconsulting.elog.ui.main.update_duty_status.FragmentUpdateDutyStatus"
+        android:label="FragmentUpdateDutyStatus"
+        tools:layout="@layout/fragment_update_duty_status">
+
+
+        <argument
+            android:name="data_log"
+            app:argType="com.selbiconsulting.elog.ui.main.home.adapter.DataLog" />
+
+        <action
+            android:id="@+id/action_fragmentUpdateDutyStatus_to_fragmentFlow"
+            app:destination="@id/fragmentFlow"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_down"
+            app:popUpTo="@id/fragmentFlow"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentYmAndPcStatuses"
+        android:name="com.selbiconsulting.elog.ui.main.ym_and_pc.FragmentYmAndPcStatuses"
+        android:label="FragmentYmAndPcStatuses"
+        tools:layout="@layout/fragment_ym_and_pc_statuses">
+        <argument
+            android:name="status_mode"
+            app:argType="integer" />
+
+        <argument
+            android:name="is_pc_allowed"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_fragmentYmAndPcStatuses_to_fragmentCounter"
+            app:destination="@id/fragmentCounter"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentCounter"
+        android:name="com.selbiconsulting.elog.ui.main.counter_screen.FragmentCounter"
+        android:label="FragmentCounter"
+        tools:layout="@layout/fragment_counter">
+        <action
+            android:id="@+id/action_fragmentCounter_to_fragmentChangeStatus"
+            app:destination="@id/fragmentChangeStatus"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_down"
+            app:popUpTo="@id/fragmentChangeStatus"
+            app:popUpToInclusive="true" />
+
+        <argument
+            android:name="status_mode"
+            app:argType="integer" />
+
+        <argument
+            android:name="is_pc_allowed"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_fragmentCounter_to_fragmentFlow"
+            app:destination="@id/fragmentFlow"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_down"
+            app:popUpTo="@id/fragmentChangeStatus"
+            app:popUpToInclusive="true" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFullScreenGraph"
+        android:name="com.selbiconsulting.elog.ui.main.full_screen_graph.FragmentFullScreenGraph"
+        android:label="FragmentFullScreenGraph"
+        tools:layout="@layout/fragment_full_screen_graph" />
+    <fragment
+        android:id="@+id/fragmentUpdateMainInfo"
+        android:name="com.selbiconsulting.elog.ui.main.update_main_info.FragmentUpdateMainInfo"
+        android:label="FragmentUpdateMainInfo">
+        <argument
+            android:name="docs_name"
+            app:argType="string" />
+        <argument
+            android:name="trailer_name"
+            app:argType="string" />
+        <argument
+            android:name="notes"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentUpdateMainInfo_to_fragmentFlow"
+            app:destination="@id/fragmentFlow"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_down"
+            app:popUpTo="@id/fragmentFlow"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

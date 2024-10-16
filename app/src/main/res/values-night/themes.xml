@@ -1,0 +1,89 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Elog" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_brand</item>
+        <item name="colorPrimaryVariant">@color/surface</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/stroke_secondary</item>
+        <item name="colorSecondaryVariant">@color/text_secondary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="bottomSheetDialogTheme">@style/SheetDialog</item>
+        <item name="colorControlActivated">@color/primary_brand</item>
+
+
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+        <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
+
+
+    </style>
+
+    <style name="SheetDialog" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:layout_marginHorizontal">2dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:maxWidth">520dp</item>
+        <item name="android:state_expanded">true</item>
+        <item name="behavior_skipCollapsed">true</item>
+        <item name="expanded">true</item>
+
+    </style>
+
+
+    <style name="TextCharts" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="MainBackground">
+        <item name="background">@color/surface</item>
+    </style>
+
+
+    <style name="CardViewTheme">
+        <item name="backgroundColor">@color/surface</item>
+    </style>
+
+    <style name="TextPrimary">
+        <item name="android:textColor">@color/reverse_background</item>
+    </style>
+
+    <style name="TabWidgetCategories">
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:paddingVertical">11dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/background</item>
+    </style>
+
+
+    <style name="TabLayout">
+        <item name="tabIndicator">@drawable/tab_selected_categories</item>
+        <item name="tabIndicatorColor">@color/primary_brand</item>
+    </style>
+    <style name="Theme.SplashScreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/secondary_surface</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="s">@color/secondary_surface</item>
+        <item name="android:navigationBarColor">@color/secondary_surface</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowFrame">@drawable/splash_screen</item>
+
+    </style>
+
+</resources>

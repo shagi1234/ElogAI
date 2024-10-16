@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextXsSemiBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="TextSmSemiBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="TextSmRegular">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+
+    <style name="TextMdRegular">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="TextSmBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="TextSmMedium">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="TextXsMedium">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="TextXsRegular">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+
+    <style name="TextXlBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="TextXlSemiBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="TextXlMedium">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+
+    <style name="TextMdMedium">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+
+    <style name="TextMdSemiBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="TextMdBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="TextLgBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="TextLgSemiBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="TextXXLSemiBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    //Display
+
+    <style name="DisplaySmSemiBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="DisplayXsBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="DisplayXsSemiBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="DisplayXLSemiBold">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="DisplayMdMedium">
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+
+
+</resources>

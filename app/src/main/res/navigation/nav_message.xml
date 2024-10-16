@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_message"
+    app:startDestination="@id/fragmentMessages2">
+
+    <fragment
+        android:id="@+id/fragmentMessages2"
+        android:name="com.selbiconsulting.elog.ui.main.messages.FragmentMessages"
+        android:label="fragment_messages"
+        tools:layout="@layout/fragment_messages" />
+</navigation>

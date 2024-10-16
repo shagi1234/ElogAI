@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_only">#FFFFFFFF</color>
+    <color name="background">#EEF2F6</color>
+    <color name="surface">#FCFCFD</color>
+    <color name="primary_brand">#2970FF</color>
+    <color name="primary_disabled">#9AA4B2</color>
+    <color name="surface_disabled">#E3E8EF</color>
+    <color name="secondary_surface">#EEF2F6</color>
+    <color name="reverse_background">#121926</color>
+    <color name="on_background">#121926</color>
+    <color name="success_on">#079455</color>
+    <color name="success_container">#A9EFC5</color>
+    <color name="error_on">#F04438</color>
+    <color name="error_container">#FEE4E2</color>
+    <color name="warning_on">#F79009</color>
+    <color name="warning_container">#FEEFC6</color>
+    <color name="text_secondary">#697586</color>
+    <color name="text_primary">#121926</color>
+    <color name="on_primary">#EFF4FF</color>
+    <color name="stroke_secondary">#CDD5DF</color>
+    <color name="stroke_color_primary">#9AA4B2</color>
+    <color name="progress_indicator">#5D38F0</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray100">#EEF2F6</color>
+    <color name="brand100">#D1E0FF</color>
+    <color name="brand200">#B2CCFF</color>
+    <color name="brand300">#84ADFF</color>
+    <color name="text_tertiary">#9AA4B2</color>
+    <color name="stroke_tertiary">#EEF2F6</color>
+    <color name="logo_text">#052C41</color>
+
+    //status colors
+    <color name="status_on_color">#2970FF</color>
+    <color name="status_on_overlay">#402970FF</color>
+    <color name="status_off_color">#364152</color>
+    <color name="status_off_overlay">#40364152</color>
+    <color name="status_sb_color">#F79009</color>
+    <color name="status_sb_overlay">#40F79009</color>
+    <color name="status_ym_color">#29B2FF</color>
+    <color name="status_ym_overlay">#4029B2FF</color>
+    <color name="status_pc_color">#697586</color>
+    <color name="status_pc_overlay">#40697586</color>
+
+
+
+
+
+</resources>

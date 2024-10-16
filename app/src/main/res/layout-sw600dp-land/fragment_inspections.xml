@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.main.inspections.FragmentInspections">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/header_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottom_corner_16">
+
+            <ImageButton
+                android:id="@+id/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/transparent"
+                android:padding="8dp"
+                android:src="@drawable/ic_back"
+                app:tint="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tv_header_title"
+                style="@style/TextLgSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/inspections"
+                android:textColor="@color/text_primary" />
+
+        </FrameLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_corner_16"
+                        android:backgroundTint="@color/surface"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/oval"
+                                android:backgroundTint="@color/secondary_surface"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_inspections"
+                                app:tint="@color/text_secondary" />
+
+                            <TextView
+                                style="@style/TextLgSemiBold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:singleLine="true"
+                                android:text="@string/review_logs_for_previous_7_days_today"
+                                android:textColor="@color/text_primary" />
+
+                            <TextView
+                                style="@style/TextSmRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tap_begin_inspection_and_hand_your_device_to_the_officer"
+                                android:textColor="@color/text_secondary" />
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_begin_inspection"
+                                style="@style/PrimaryButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="@string/begin_inspection" />
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/bg_corner_16"
+                        android:backgroundTint="@color/surface"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/oval"
+                                android:backgroundTint="@color/secondary_surface"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_send"
+                                app:tint="@color/text_secondary" />
+
+                            <TextView
+                                style="@style/TextLgSemiBold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:singleLine="true"
+                                android:text="@string/send_logs_for_previous_7_days_today"
+                                android:textColor="@color/text_primary" />
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_send_logs"
+                                style="@style/PrimaryButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="@string/send_logs" />
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/bg_corner_16"
+                        android:backgroundTint="@color/surface"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/image"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/oval"
+                                android:backgroundTint="@color/secondary_surface"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_inspections"
+                                app:tint="@color/text_secondary" />
+
+                            <TextView
+                                style="@style/TextLgSemiBold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:singleLine="true"
+                                android:text="@string/send_eld_output_file_to_dot"
+                                android:textColor="@color/text_primary" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_send_eld"
+                                style="@style/PrimaryButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="@string/send_eld_output_file_to_dot" />
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</layout>
